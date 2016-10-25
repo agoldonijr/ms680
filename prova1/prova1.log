@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.28)  20 OCT 2016 23:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.28)  25 OCT 2016 00:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -207,6 +207,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 22.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -215,7 +219,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 O
+l.31 O
        que achei mais \'util nessaa disciplina \'e que ela \'e a \'unica que...
 
 ? 
@@ -226,23 +230,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38 \end{enumerate}
+l.46 \end{enumerate}
                     
 ? 
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.38 \end{enumerate}
+l.46 \end{enumerate}
                     
 ? 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./prova1.aux) ) 
 Here is how much of TeX's memory you used:
- 3191 strings out of 494888
- 49020 string characters out of 6179127
+ 3195 strings out of 494888
+ 49064 string characters out of 6179127
  106035 words of memory out of 5000000
- 6478 multiletter control sequences out of 15000+600000
+ 6482 multiletter control sequences out of 15000+600000
  6974 words of font info for 25 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  44i,7n,42p,510b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -251,7 +255,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on prova1.pdf (1 page, 50656 bytes).
+Output written on prova1.pdf (1 page, 51480 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
