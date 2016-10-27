@@ -17,12 +17,38 @@
 
 %Questao 1-----------------------------------------------------------------
 \item
-Para a situa\c{c}\~ao do conv\'ivio de tr\^es esp\'ecies: gavi\~ao, cobra e roedores, onde os gavi\~oes predam as cobras e os roedores e as cobras predam os roedores, vamos modelar um tripla din\^amica populacional usando o seguinte sistema de equa\c{c}\~oes:
+Para construir um modelo de conv\'ivio de esp\'ecies onde existe a competi\c{c}\~ao entre elas, primeiramente, vamos determinar as tr\^es esp\'ecies envolvidas e as rela\c{c}\~oes entre elas. No nosso caso, temos: gavi\~oes ($G_n$), cobras ($C_n$) e roedores ($R_n$). Gavi\~oes predam as cobras e os roedores; Cobras predam os roedores.\\
+Nessa situa\c{c}\~ao, o sistema que modela a tripla din\^amica populacional \'e:
 %aqui começa o modelo matematica da dinâmica triplice
 \begin{equation}
+\left\{\begin{array}{l}
+\Delta G_n = \alpha_1 G_n + G_n C_n\beta_2 + G_n R_n\gamma_2 - \frac{\alpha_1 G_n ^2}{K}  - M\\
+\\
+\Delta C_n = \beta_1 C_n + C_n R_n\gamma_2 - C_n G_n\beta_2 - \frac{\beta_1 C_n ^2}{K} - M \\
+\\
+\Delta R_n = \gamma_1 R_n - R_n C_n\gamma_2 - G_n R_n\gamma_2 - \frac{\gamma_1 R_n ^2}{K} -M 
+\end{array}
 \end{equation}
-
-
+\\
+Onde:\\
+$G_n$ \'e o n\'umero de gavi\~oes;\\
+$C_n$ \'e o n\'umero de cobras;\\
+$R_n$ \'e o n\'umero de roedores;\\
+$\alpha_1$ \'e a taxa de crescimento dos gavi\~oes;\\
+$\alpha_2$ \'e a taxa de decrescimento dos gavi\~oes;\\
+$\beta_1$ \'e a taxa de crescimento das cobras;\\
+$\beta_2$ \'e a taxa de decrescimento das cobras;\\
+$\gamma_1$ \'e a taxa de crescimento das roedores;\\
+$\gamma_2$ \'e a taxa de decrescimento das roedores;\\
+$K$ \'e a capacidade de suporte do meio;\\
+$M$ \'e a quantidade de indiv\'iduos que morrem por causas naturais (velhice, doen\c{c}a, cat\'astrofes, etc.).\\
+\\
+Os coeficientes $\alpha_1, \beta_1, \gamma_1$ representam a taxa de natalidade da espe\'ecie.\\
+O efeito produzido pelo aparecimento de uma outra esp\'ecie, competi\c{c}\~ao inter-espec\'ifica, \'e proporcional ao produto dos termos das esp\'ecies multiplicado pelo fator de decrescimento da esp\'ecia presa. Neste modelo, estou supondo que o decrescimento ($\alpha_2, \beta_2, \gamma_2 $) n\~ao muda mesmo mudando a esp\'ecie predadora.\\
+O coeficiente $\frac{P ^2}{K}$, onde $P$ \'e uma popula\c{c}\~ao qualquer, mede o efeito do crescimento de uma popula\c{c}\~ao pelo acr\'escimo de um novo indiv\'iduo.\\
+Uma observa\c{c}\~ao relevante para a simula\c{c}\~ao do modelo \'e o valor dado aos coeficientes $\alpha$, $\beta$ e $\gamma$, pois cada esp\'ecie pode ter a capacidade de excluir a outra.\\
+No caso de n\~ao existirem predadores, as presas crescem at\'e se estabilizarem devido a capacidade de suporte.\\
+A popula\c{c}\~ao dos predadores diminuem na aus\^encia de presas.\\
 %Questao 2-----------------------------------------------------------------
 \item
 %Questao 3-----------------------------------------------------------------
