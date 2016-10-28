@@ -17,6 +17,7 @@
 
 %Questao 1-----------------------------------------------------------------
 \item
+\\
 Para construir um modelo de conv\'ivio de esp\'ecies onde existe a competi\c{c}\~ao entre elas, primeiramente, vamos determinar as tr\^es esp\'ecies envolvidas e as rela\c{c}\~oes entre elas. No nosso caso, temos: gavi\~oes ($G_n$), cobras ($C_n$) e roedores ($R_n$). Gavi\~oes predam as cobras e os roedores; Cobras predam os roedores.\\
 Nessa situa\c{c}\~ao, o sistema que modela a tripla din\^amica populacional \'e:
 %aqui começa o modelo matematica da dinâmica triplice
@@ -51,6 +52,20 @@ No caso de n\~ao existirem predadores, as presas crescem at\'e se estabilizarem 
 A popula\c{c}\~ao dos predadores diminuem na aus\^encia de presas.\\
 %Questao 2-----------------------------------------------------------------
 \item
+\\
+Considerando um lago com peixes atrativos para pesca e a exist\^ecia de pescadores, vamos criar um modelo que descreve a intera\c{c}\~ao entre peixe e pescadores levando em considera\c{c}\~ao que na ausencia de pescadores os peixes possuem crescimento log\'istico e com a presen\c{c}a dos pescadores, o crescimento dos peixes se reduz a uma taxa proporcional a popula\c{c}\~ao de peixes e pescadores. Vamos levar em conta tamb\'em que pescadores s\~ao atr\'idos para o lago a uma taxa proporcional a quantidade de peixes no lago, por\'em, s\~ao desencorajados a uma taxa proporcional ao n\'umero de pescadores  que j\'a est\~ao pescando. Dessa forma, o sistema de equa\c{c}\~oes que descreve o modelo \'e:
+%aqui começa o modelo matematica da dinâmica triplice
+\begin{equation}
+\left\{\begin{array}{l}
+\Delta G_n = \alpha_1 G_n + G_n C_n\beta_2 + G_n R_n\gamma_2 - \frac{\alpha_1 G_n ^2}{K}  - M\\
+\\
+\Delta C_n = \beta_1 C_n + C_n R_n\gamma_2 - C_n G_n\beta_2 - \frac{\beta_1 C_n ^2}{K} - M \\
+\\
+\Delta R_n = \gamma_1 R_n - R_n C_n\gamma_2 - G_n R_n\gamma_2 - \frac{\gamma_1 R_n ^2}{K} -M 
+\end{array}
+\end{equation}
+\\
+
 %Questao 3-----------------------------------------------------------------
 \item
 \\
@@ -59,9 +74,11 @@ O que achei mais \'util nessaa disciplina \'e que ela \'e a \'unica que estou fa
 J\'a o que achei menos importante foi
 %Questao 4-----------------------------------------------------------------
 \item
+\\
 Minha maior dificuldade em rela\c{c}\~ao ao primeiro projeto foi pensar em quais hip\'oteses utilizar e como inserir essas hip\'oteses, que s\~ao fen\^omenos reais, nas equa\c{c}\~oes, dessa forma, achei melhor fazer o projeto com as hip\'oteses que foram utlizadas em sala de aula, pois j\'a estava familiarizado com a "cara" que a equa\c{c}\~ao teria.
 %Questao 5-----------------------------------------------------------------
 \item
+\\
 Por se tratar de uma disciplina que trabalha com problemas reais, o ponto que vejo como o mais fraco \'e a falta de  simula\c{c}\~oes dos modelos que tratamos em sala de aula.
 \\
 A simula\c{c}\~ao mostra se o modelo que estamos criando faz sentido f\'isico ou n\~ao. Apenas a visualiza\c{c}\~ao das equa\c{c}\~oes que comp\~oem o modelo nem sempre s\~ao t\~ao claras ou suficiente para uma valida\c{c}\~ao das hip\'oteses que consideramos.
