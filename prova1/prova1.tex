@@ -44,7 +44,7 @@ $\gamma_2$ \'e a taxa de decrescimento das roedores;\\
 $K$ \'e a capacidade de suporte do meio;\\
 $M$ \'e a quantidade de indiv\'iduos que morrem por causas naturais (velhice, doen\c{c}a, cat\'astrofes, etc.).\\
 \\
-Os coeficientes $\alpha_1, \beta_1, \gamma_1$ representam a taxa de natalidade da espe\'ecie.\\
+Os coeficientes $\alpha_1, \beta_1, \gamma_1$ representam a taxa de natalidade da esp\'ecie.\\
 O efeito produzido pelo aparecimento de uma outra esp\'ecie, competi\c{c}\~ao inter-espec\'ifica, \'e proporcional ao produto dos termos das esp\'ecies multiplicado pelo fator de decrescimento da esp\'ecia presa. Neste modelo, estou supondo que o decrescimento ($\alpha_2, \beta_2, \gamma_2 $) n\~ao muda mesmo mudando a esp\'ecie predadora.\\
 O coeficiente $\frac{P ^2}{K}$, onde $P$ \'e uma popula\c{c}\~ao qualquer, mede o efeito do crescimento de uma popula\c{c}\~ao pelo acr\'escimo de um novo indiv\'iduo.\\
 Uma observa\c{c}\~ao relevante para a simula\c{c}\~ao do modelo \'e o valor dado aos coeficientes $\alpha$, $\beta$ e $\gamma$, pois cada esp\'ecie pode ter a capacidade de excluir a outra.\\
@@ -57,15 +57,27 @@ Considerando um lago com peixes atrativos para pesca e a exist\^ecia de pescador
 %aqui começa o modelo matematica da dinâmica triplice
 \begin{equation}
 \left\{\begin{array}{l}
-\Delta G_n = \alpha_1 G_n + G_n C_n\beta_2 + G_n R_n\gamma_2 - \frac{\alpha_1 G_n ^2}{K}  - M\\
+\Delta P_n = \alpha P_n (1 - \frac{ P_n}{K})  - \beta P_n H_n\\
 \\
-\Delta C_n = \beta_1 C_n + C_n R_n\gamma_2 - C_n G_n\beta_2 - \frac{\beta_1 C_n ^2}{K} - M \\
-\\
-\Delta R_n = \gamma_1 R_n - R_n C_n\gamma_2 - G_n R_n\gamma_2 - \frac{\gamma_1 R_n ^2}{K} -M 
+\Delta C_n = \gamma P_n H_n - \varepsilon H_n  \\
 \end{array}
 \end{equation}
 \\
-
+Onde:
+\\
+$P_n$ \'e a popula\c{c}\~ao de peixes;\\
+$H_n$ \'e a popula\c{c}\~ao de pescadores;\\
+$K$ \'e a capacidade de suporte do meio, no nosso caso, do lago;\\
+$\alpha$ \'e a taxa de crescimento da popula\c{c}\~ao de peixes; \\
+$\beta$ \'e a taxa de decrescimento da popula\c{c}\~ao de peixes; \\
+$\gamma$ \'e a taxa de decrescimento da popula\c{c}\~ao de pescadores; \\
+$\varepsilon$ \'e a taxa com que os pescadores s\~ao desencorajados a pescar. 
+\\
+\\
+O termo $\alpha P_n (1 - \frac{ P_n}{K})$ representa o crecimento log\'istico da popula\c{c}\~ao de peixes, caso n\~ao exista pescadores. O efeito produzido pelo aparecimento dos pescadores \'e proporcional ao produto das popula\c{c}\~oes (peixe e pescadores) multiplicado por um fator de descrecimento da popula\c{c}\~ao de peixes.
+\\
+A taxa com que os pescadores s\~ao atraidos para o lago \'e representado pelo produto das popula\c{c}\~oes (peixe e pescadores) multiplicado por um fator de crescimento dos pescadores. J\' a a diminui\c{c}\~ao dos pescadores \'e proporcional a taxa de pescadores j\'a existe multiplicado por um fator de desencorajamento.
+\\
 %Questao 3-----------------------------------------------------------------
 \item
 \\
