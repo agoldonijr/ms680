@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.30)  30 OCT 2016 23:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.30)  30 OCT 2016 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -289,7 +289,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.84 O
-       que achei mais \'util nessaa disciplina \'e que ela \'e a \'unica que...
+       que achei mais \'util nessa disciplina \'e que ela \'e a \'unica que ...
 
 ? 
 
@@ -339,7 +339,7 @@ Here is how much of TeX's memory you used:
  6475 multiletter control sequences out of 15000+600000
  6974 words of font info for 25 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 44i,7n,42p,728b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,7n,42p,731b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
 i10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
@@ -351,7 +351,7 @@ ist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb>
-Output written on prova1.pdf (3 pages, 113235 bytes).
+Output written on prova1.pdf (3 pages, 113238 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
