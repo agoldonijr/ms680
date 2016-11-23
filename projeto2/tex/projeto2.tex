@@ -1,0 +1,74 @@
+\documentclass[a4paper]{article}
+\usepackage[brazilian]{babel}
+\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage{graphicx}
+%-----------------------------------------------------------------
+\title{Projeto 2: Simula\c{c}\~ao de modelo presa-predador com acidente com poluente.}
+\author{122830 Alcides Goldoni Junior\\
+  \small MS 680 - Modelos matem\'{a}ticos aplicados a Biologia\\
+  %\small Unicamp 
+}%Fechando Title
+\begin{document}
+\maketitle
+\abstract{}
+%Seções
+%-----------------------------------------------------------------
+\section{Introdu\c{c}\~{a}o}
+\\
+Nesse projeto irei sumular a preda\c{c}\~ao de tr\^es esp\'ecies por um predador que se alimenta exclusivamente dessas esp\'ecies.
+\\
+Em um determinado instante no tempo, ser\'a introduzido no meio, um acidente com poluente, onde ele \'e despejado de uma s\'o vez e decai ao longo do tempo. Esse poluente afeta apenas as esp\'ecies predadas.
+\\
+Vou analisar o compotamento das esp\'ecies antes e depois do acidente, verificando se existe estabilidade na conviv\^encia ou se elas chegar\~ao a extin\c{c}\~ao
+\section{Modelagem}
+Tr\^es esp\'ecies vivem em um lago suficientemente grande. Essas esp\'ecies competem pelos recursos do meio ambiente mas n\~ao se predam. Nesse mesmo lago, existe uma quarta esp\'ecie que preda as outras tr\^es.
+\\
+Um acidente ocorre e despeja um certa quantidade de poluente nesse lago, afetando negativamente as esp\'ecies que s\~ao predadas mas n\~ao afetando o predador. O poluente sofre um decaimento ao longo do tempo de forma muito lenta, afetando outras gera\c{c}\~oes da popula\c{c}\~ao de presas.
+\\
+Partindo das premissas acima, vou modelar a equa\c{c}\~ao que descreve a situa\c\{c}\~ao utilizando do modelo de crescimento populacional descrito por Verhulst e um decaimento constante para o poluente.
+
+\begin{equation}
+\left\{\begin{array}{l}
+\frac{\delta A}{\delta t} =  \lambda_A (A + B + C + D)(2 - \frac{A + B + C +D}{K}) -\alpha_1AD - \alpha_2PA  \\
+\\
+\frac{\delta B}{\delta t} =  \lambda_B (A + B + C + D)(1 - \frac{A + B + C +D}{K}) -\beta_1BD - \beta_2BA  \\
+\\
+\frac{\delta C}{\delta t} =  \lambda_C (A + B + C + D)(1 - \frac{A + B + C +D}{K}) -\gamma_1CD - \gamma_2CA  \\
+\\
+\frac{\delta D}{\delta t} =  \lambda_D (A + B + C + D)(1 - \frac{A + B + C +D}{K}) + \alpha_1AD + \beta_1 BD + \gamma_1CD  \\
+\\
+\frac{\delta P}{\delta t} = - \varepsilon P \\
+\end{array}
+\end{equation}
+\\
+Onde:
+\\
+$A, B$ e $C$ s\~ao as esp\'ecies predadas;
+\\
+$D$ \'e a esp\'ecie predadora;
+\\
+$P$ \'e o poluente;
+\\
+$\lambda$ \'e a taxa de crescimento de cada popula\c{c}\~ao;
+\\
+$\alpha_1$ \'e a taxa de crescimento da popula\c{c}\~ao $A$;
+\\
+$\alpha_2$ \'e a taxa de decrescimento da popula\c{c}\~ao $A$;
+\\
+$\beta_1$ \'e a taxa de crescimento da popula\c{c}\~ao $B$;
+\\
+$\beta_2$ \'e a taxa de decrescimento da popula\c{c}\~ao $B$;
+\\
+$\gamma_1$ \'e a taxa de crescimento da popula\c{c}\~ao $C$;
+\\
+$\gamma_2$ \'e a taxa de decrescimento da popula\c{c}\~ao $C$;
+\section{Simula\c{c}\~oes}
+\section{Conclus\~ao}
+% Bibliografia
+%-----------------------------------------------------------------
+\begin{thebibliography}{99}
+\bibitem {Cd94} http://www.ibge.gov.br/home/geociencias/cartografia/default\_territ\_area.shtm
+\end{thebibliography}
+
+\end{document}
