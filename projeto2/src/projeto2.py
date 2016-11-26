@@ -11,24 +11,24 @@ c = []				#Vetor que conterá os indiviuos da especie C
 d = []				#Vetor que conterá os indiviuos da especie D
 
 p.append(0);			#inicializando o vetor de poluicao
-a.append(10000);		#inicializando o vetor da especie A
+a.append(30000);		#inicializando o vetor da especie A
 b.append(20000);		#inicializando o vetor da especie B
-c.append(30000);		#inicializando o vetor da especie C
+c.append(10000);		#inicializando o vetor da especie C
 d.append(100);			#inicializando o vetor da especie D
 
-lambdaA = 0.05			#taxa de crescimento da especie A
-lambdaB = 0.060			#taxa de crescimento da especie B
-lambdaC = 0.06			#taxa de crescimento da especie C
-lambdaD = 0.008			#taxa de crescimento da especie D
+lambdaA = 0.24			#taxa de crescimento da especie A
+lambdaB = 0.26			#taxa de crescimento da especie B
+lambdaC = 0.28			#taxa de crescimento da especie C
+lambdaD = 0.000008		#taxa de crescimento da especie D
 
 alpha1 	= 0.00000005		#taxa de decrescimento por predacao da especie A
-alpha2 	= 0.0050		#taxa de decrescimento por poluicao da especie A 
+alpha2 	= 0.00054		#taxa de decrescimento por poluicao da especie A 
 beta1  	= 0.00000008		#taxa de decrescimento por predacao da especie B 
-beta2	= 0.0056		#taxa de decrescimento por poluicao da especie B 
+beta2	= 0.00056		#taxa de decrescimento por poluicao da especie B 
 gama1	= 0.00000009		#taxa de decrescimento por predacao da especie C 
-gama2	= 0.0058		#taxa de decrescimento por poluicao da especie C 
+gama2	= 0.00058		#taxa de decrescimento por poluicao da especie C 
 
-y 	= 0.0000000025		#taxa de crescimento do predador enquanto tem presa
+y 	= 0.000000002		#taxa de crescimento do predador enquanto tem presa
 
 
 epsilon = 0.05			#taxa de decaimento do poluente
@@ -36,7 +36,7 @@ epsilon = 0.05			#taxa de decaimento do poluente
 K	= 100000		#Capacidade de suporte do meio
 
 n	= 106			#tempo de simulacao em semanas (aproximadamente 53 semanas = 1 ano)
-x	= 20			#semana em que ocorre o acidente
+x	= 75			#semana em que ocorre o acidente
 
 #Laco de tempo e a situacao de cada um dos individuos da dinamica e no instante n ocorre o acidente
 for i in range(0,n):
@@ -71,8 +71,8 @@ plt.plot(a, 'bo-');
 plt.plot(b, 'go-');
 plt.plot(c, 'yo-');
 plt.plot(d, 'ro-');
-#plt.plot(p, 'ko-');
-plt.ylabel('Poluicao');
+#plt.plot(p, 'ko-')
+plt.ylabel('Numero de inviduos');
 plt.xlabel('Semana');
 plt.show();
 

@@ -11,12 +11,11 @@
 }%Fechando Title
 \begin{document}
 \maketitle
-\abstract{}
 %Seções
 %-----------------------------------------------------------------
 \section{Introdu\c{c}\~{a}o}
 \\
-Nesse projeto irei sumular a preda\c{c}\~ao de tr\^es esp\'ecies por um predador que se alimenta exclusivamente dessas esp\'ecies.
+Nesse projeto irei simular a preda\c{c}\~ao de tr\^es esp\'ecies por um predador que se alimenta exclusivamente dessas esp\'ecies.
 \\
 Em um determinado instante no tempo, ser\'a introduzido no meio, um acidente com poluente, onde ele \'e despejado de uma s\'o vez e decai ao longo do tempo. Esse poluente afeta apenas as esp\'ecies predadas.
 \\
@@ -36,7 +35,8 @@ Partindo das premissas acima, vou modelar a equa\c{c}\~ao que descreve a situa\c
 \\
 \frac{\delta C}{\delta t} =  \lambda_C (A + B + C + D)(1 - \frac{A + B + C +D}{K}) -\gamma_1CD - \gamma_2CA  \\
 \\
-\frac{\delta D}{\delta t} =  \lambda_D (A + B + C + D)(1 - \frac{A + B + C +D}{K}) + \alpha_1AD + \beta_1 BD + \gamma_1CD  \\
+%\frac{\delta D}{\delta t} =  \lambda_D (A + B + C + D)(1 - \frac{A + B + C +D}{K}) + \alpha_1AD + \beta_1 BD + \gamma_1CD  \\
+\frac{\delta D}{\delta t} =  \lambda_D (A + B + C + D)(1 - \frac{A + B + C +D}{K}) + \mu_1AD + \mu_2 BD + \mu_3CD  \\
 \\
 \frac{\delta P}{\delta t} = - \varepsilon P \\
 \end{array}
@@ -63,7 +63,30 @@ $\beta_2$ \'e a taxa de decrescimento da popula\c{c}\~ao $B$;
 $\gamma_1$ \'e a taxa de crescimento da popula\c{c}\~ao $C$;
 \\
 $\gamma_2$ \'e a taxa de decrescimento da popula\c{c}\~ao $C$;
+\\
+$\mu$ \'e a taxa de crescimento da popula\c{c}\~ao $D$ em rela\c{c}\~ao a cada presa.
+\\
+\\
+\'E esperando que quando as presas comecem a diminuir devido a polui\c{c}\~ao, o predador, em um primeiro momento, continue crescendo, mas, em seguida comece a diminuir devido a falta de alimentos.
+\\
+J\'a as presas, \'e esperado que elas cres\c{c}am at\'e que o acidente aconte\c{c}a, ap\'os isso, \'e esperado que elas diminuam bruscamente at\'e que estabilizem.
+\\
+N\~ao \'e esperado que nenhuma das popula\c{c}\~oes cheguem a extin\c{c}\~ao, mas dependendo do decaimento do poluente, isso pode ocorrer.\\
+
 \section{Simula\c{c}\~oes}
+Para a simula\c{c}\~ao, foi utilizado a linguagem de programa\c{c}\~ao Python e a biblioteca Matplotlib para gerar os gr\'aficos. A simula\c{c}\~ao ocorreu em um notebook Dell Latide E6510 com processador Intel(R) Core(TM) i7 CPU Q 840 @ 1.87GHz, 1TB de HD e 8GB de mem\'oria RAM.
+\\
+Os valores iniciais da popula\c{c}\~ao das presas s\~ao significativamente maior do que o valor inicial do predador para simular que as presas s\~ao peixes bem menores que o predador e, dessa forma, tem uma popula\c{c}\~ao maior no lago.
+\\
+J\'a o valor inicial da polui\c{c}\~ao \'e zero, pois nessa simula\c{c}\~ao o acidente ocorre semanas depois do inicio da simula\c{c}\~ao.
+\\
+Da mesma forma que os valores iniciais de cada popula\c{c}\~ao, a taxa de crescimento das presas \'e significativamente maior que a taxa de crescimento do predador.
+\\
+O valor do decaimento da polui\c{c}\~ao foi escolhido de forma que a polui\c{c}\~ao permancesse no lago por tempo suficientemente grande para que atingisse v\'arias gera\c{c}\~oes, tanto das presas quanto do predador.
+\\
+A capacidade de suporte foi escolhida de forma aleat\'oria. Sendo apenas um n\'umero suficientemente maior que a soma dos valores iniciais.
+\\
+
 \section{Conclus\~ao}
 % Bibliografia
 %-----------------------------------------------------------------
