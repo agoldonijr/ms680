@@ -1,4 +1,31 @@
-#!/usr/bin/pmithon3
+#!/usr/bin/python3
+
+#############################################################################################################
+#Para a utilizacao desse programa, eh necessario a instalacao do python3 e da biblioteca python3-matplotlib
+#
+#Para Debian/Ubuntu
+#sudo apt-get install python3 python3-matplotlib
+#
+#Para Red-Hat/CentOS
+#sudo yum install --enablerepo=epel python3 python3-matplotlib
+#
+#Verifica a documentacao junto a https://www.python.org/downloads/windows/ para instalacao no Windows
+#
+#Para a executar o programa, em um terminal, digite: 
+#python3 projeto2.py
+#
+#Esse programa foi desenvolvido por Alcides Goldoni Junior - Bacharel Matematica Aplicada e computacional - 
+#Unicamp e pode ser utilizado por qualquer pessoa, desde que cite em suas referencias.
+#############################################################################################################
+
+############################################################################################################
+#O programa abaixa simula a dinamica populacional entre 4 especies de peixes, onde 3 delas disputam o meio
+# e a quarta eh um predador comum das outras 3 especies.
+#Em um dado periodo, eh despejado um quantidade de poluente no meio, afetando negativamente as especies 
+#predadas e nao afetando a especie predadora.
+#
+#Todos as variaveis e estao descritas logo abaixo
+###########################################################################################################
 
 #importa da biblioteca que cria os graficos
 import matplotlib.pyplot as plt
@@ -31,7 +58,6 @@ gama1	= 0.00000009		#taxa de decrescimento por predacao da especie C
 gama2	= 0.00058		#taxa de decrescimento por poluicao da especie C 
 
 mi 	= 0.00000002		#taxa de crescimento do predador enquanto tem presa
-
 
 epsilon = 0.05			#taxa de decaimento do poluente
 
@@ -72,6 +98,9 @@ for i in range(0,n):
 		total.append(a[i]+b[i]+c[i]+d[i])
 	print(i, a[i])
 
+############################################################################################################
+#Para o plot dos graficos, comente com # as linhas que nao deseja plotar 
+############################################################################################################
 #Plotando o grafico
 plt.plot(a, 'bo-');
 plt.plot(b, 'go-');
