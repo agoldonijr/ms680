@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.28)  5 DEC 2016 22:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.28)  7 DEC 2016 00:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -218,115 +218,167 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 22.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.23 
-     
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.23 
-     
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \@@par 
-l.23 
-     
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+
+! Extra }, or forgotten \endgroup.
+l.36 $P$ \'e a poluic\{c}
+                         ~ao atual do setor;
 ? 
 ! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.23 
-     
+l.38 $D$ \'e o decaimento da poluic\{c}
+                                       ~ao daquele setor;
 ? 
-! You can't use `\eqno' in vertical mode.
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no £ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--48
+
+ []
+
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no µ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
+
+ []
+
+! You can't use `\eqno' in math mode.
 \endequation ->\eqno 
                      \hbox {\@eqnnum }$$\@ignoretrue 
-l.24 \end{equation}
+l.65 \end{equation}
                    
 ? 
-! Missing $ inserted.
+! Missing \right. inserted.
 <inserted text> 
-                $
-l.24 \end{equation}
+                \right .
+l.65 \end{equation}
                    
 ? 
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.24 \end{equation}
-                   
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+! Extra }, or forgotten \endgroup.
+l.66 ...}~ao onde aidna n\~ao se tem a vacinac\{c}
+                                                  ~ao, onde;
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--26
+Underfull \hbox (badness 10000) in paragraph at lines 65--90
 
  []
 
 
-! LaTeX Error: There's no line here to end.
+Underfull \hbox (badness 10000) in paragraph at lines 65--90
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 \item
-          
+ []
+
+! You can't use `\eqno' in math mode.
+\endequation ->\eqno 
+                     \hbox {\@eqnnum }$$\@ignoretrue 
+l.100 \end{equation}
+                    
+? 
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.100 \end{equation}
+                    
 ? 
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 \item
-          
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--41
+Underfull \hbox (badness 10000) in paragraph at lines 100--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--45
+Underfull \hbox (badness 10000) in paragraph at lines 107--117
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--121
+
+ []
+
+[2]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no £ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¢ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--53
+Underfull \hbox (badness 10000) in paragraph at lines 121--129
 
  []
 
-[1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 53--56
+Underfull \hbox (badness 10000) in paragraph at lines 129--135
 
  []
 
-[2] (./prova2.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--160
+
+ []
+
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.161 N(t) = K e^\(
+                   -e^r^t  \ln(\frac{N(0)}{K})
+? 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 N(t) = K e^\(
+                   -e^r^t  \ln(\frac{N(0)}{K})
+? 
+! Double superscript.
+l.161 N(t) = K e^\(-e^r^
+                        t  \ln(\frac{N(0)}{K})
+? 
+! You can't use `\eqno' in math mode.
+\endequation ->\eqno 
+                     \hbox {\@eqnnum }$$\@ignoretrue 
+l.162 \end{equation}
+                    
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.162 \end{equation}
+                    
+? 
+[3] [4] (./prova2.aux) ) 
 Here is how much of TeX's memory you used:
- 3185 strings out of 494888
- 48940 string characters out of 6179127
- 107035 words of memory out of 5000000
- 6473 multiletter control sequences out of 15000+600000
+ 3206 strings out of 494888
+ 49289 string characters out of 6179127
+ 109035 words of memory out of 5000000
+ 6491 multiletter control sequences out of 15000+600000
  6675 words of font info for 24 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
- 44i,6n,42p,626b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on prova2.pdf (2 pages, 46175 bytes).
+ 44i,7n,42p,626b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy7.pfb>
+Output written on prova2.pdf (4 pages, 118947 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
