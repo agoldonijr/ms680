@@ -16,7 +16,7 @@
 \begin{enumerate}
 %Questao 1-------------------------------------------------------
 \item
-Vamos modelar a polui\c{c}\~ao de um rio seguindo as seguintes premissas: um rio divido em sete setores longitudinais um seguido do outro; fluxo de \'agua limpa entrando por afluentes e saindo por atividades agr\'icolas j\'a polu\'ida, fazendo dessa forma um fluxo diferente para cada setor do rio, por\'em com um volume constante (o volume de \'agua que entra no primeiro setor do rio \'e igual a volume de \'agua que sai no \'ultimo setor); polui\c{c}\~ao inicial diferente para cada setor; valor de decaimento de polui\c{c}\~ao diferente para cada setor; descarte de poluente diferente em cada setor.
+Vamos modelar a polui\c{c}\~ao de um rio seguindo as seguintes premissas: um rio dividido em sete setores longitudinais um seguido do outro; fluxo de \'agua limpa entrando por afluentes e saindo por atividades agr\'icolas j\'a polu\'ida, fazendo dessa forma um fluxo diferente para cada setor do rio, por\'em com um volume constante (o volume de \'agua que entra no primeiro setor do rio \'e igual ao volume de \'agua que sai no \'ultimo setor); polui\c{c}\~ao inicial diferente para cada setor; valor de decaimento de polui\c{c}\~ao diferente para cada setor; descarte de poluente diferente em cada setor.
 \\
 O sistema que melhor modela essa situa\c{c}\~ao \'e:
 \begin{equation}
@@ -25,32 +25,33 @@ O sistema que melhor modela essa situa\c{c}\~ao \'e:
 \\
 Onde:
 \\
-$P_(is)$ \'e a polui\c{c}~ao inicial do setor;
+$P_(is)$ \'e a polui\c{c}\~ao inicial do setor;
 \\
-$P_(s_ant)$ \'e a quantidade de polui\c{c}~ao do setor anterior;
+$P_(s_ant)$ \'e a quantidade de polui\c{c}\~ao do setor anterior;
 \\
 $F$ \'e o fluxo de \'agua que est\'a vindo do setor anterior;
 \\
 $V$ \'e o volume de \'agua que passa por aquele setor;
 \\
-$P$ \'e a poluic\{c}~ao atual do setor;
+$P$ \'e a polui\c{c}\~ao atual do setor;
 \\
-$D$ \'e o decaimento da poluic\{c}~ao daquele setor;
+$D$ \'e o decaimento da polui\c{c}\~ao daquele setor;
 \\
 $A$ \'e referente a atividade agricola do setor;
 \\
 $Q$ \'e a fonte de poluente do setor e
 \\
-$R$ \'e a quantidade de \'agua de afluentes;
+$R$ \'e a quantidade de \'agua de afluentes.
 \\
-Para o caso do primeiro setor, a polui\c{c}~ao que vem do setor anterior \'e zero e não \'e colocada na simulac{c}~ao.
+\\
+Para o caso do primeiro setor, a polui\c{c}\~ao que vem do setor anterior \'e zero e n\~ao \'e colocada na simula\c{c}\~ao.
 \\
 
 %Questao 2-------------------------------------------------------
 \item
-Considerando a situac{c}~ao de uma doen\c{c}a com caracter\'isticas parecidas com a gripe, onde o infectado se torna resistente ou removido e ainda existe vacinac{c}~ao, utilizando tamb\'em do modelo SIRS cont\'inuo para descrever o comportamento da doen\c{c}a, vamos levar em considerac{c}~ao que filhos de sucet\'ivel \'e sucet\'ivel, filho de infectado \'e infectado e filho de resistente \'e resistente. 
+Considerando a situa\c{c}\~ao de uma doen\c{c}a com caracter\'isticas parecidas com a gripe, onde o infectado se torna resistente ou removido e ainda existe vacina\c{c}\~ao, utilizando tamb\'em do modelo SIRS cont\'inuo para descrever o comportamento da doen\c{c}a, vamos levar em considera\c{c}\~ao que filhos de suscet\'ivel \'e suscet\'ivel, filho de infectado \'e infectado e filho de resistente \'e resistente. 
 \\
-Dessa forma, o sistema de equacões que melhor descreve essa situa\c{c}~ao \'e:
+Dessa forma, o sistema de equa\c{c}\~oes que melhor descreve essa situa\c{c}\~ao \'e:
 \\
 \begin{equation}
 \left\{\begin{array}{l}
@@ -63,8 +64,10 @@ Dessa forma, o sistema de equacões que melhor descreve essa situa\c{c}~ao \'e:
 \frac{dr}{dt} = \gamma r \\
 \end{array}
 \end{equation}
-O modelo acima reflete o que acontece com a popula\c{c}~ao onde aidna n\~ao se tem a vacinac\{c}~ao, onde;
-$S$ s\~ao os indiv\'iduos sucet\'iveis;
+O modelo acima reflete o que acontece com a popula\c{c}\~ao onde ainda n\~ao se tem a vacina\c{c}\~ao, onde:
+\\
+\\
+$S$ s\~ao os indiv\'iduos suscet\'iveis;
 \\
 $I$ s\~ao os indiv\'iduos infectados;
 \\
@@ -72,9 +75,9 @@ $R$ s\~ao os indiv\'iduos resistentes;
 \\
 $r$ s\~ao os indiv\'iduos removidos;
 \\
-$\alpha$ \'e a taxa de infec\c{c}\~ao de indiv\'iduos sucet\'iveis;
+$\alpha$ \'e a taxa de infec\c{c}\~ao de indiv\'iduos suscet\'iveis;
 \\
-$\lambda$ \'e a taxa crescimento de indiv\'iduos sucet\'iveis;
+$\lambda$ \'e a taxa crescimento de indiv\'iduos suscet\'iveis;
 \\
 $\beta$ \'e a taxa  de indiv\'iduosde infectados que se tornam resistentes;
 \\
@@ -85,7 +88,7 @@ $\gamma$ \'e a taxa  de indiv\'iduosde que s\~ao removidos;
 $\omega$ \'e a taxa de crescimento de indiv\'iduos resistentes.
 \\
 \\
-Agora, vamos incluir a vacinac{c}~ao dos indiv\'iduos sucet\'iveis:
+Agora, vamos incluir a vacina\c{c}\~ao dos indiv\'iduos suscet\'iveis:
 \\
 \begin{equation}
 \left\{\begin{array}{l}
@@ -99,34 +102,34 @@ Agora, vamos incluir a vacinac{c}~ao dos indiv\'iduos sucet\'iveis:
 \end{array}
 \end{equation}
 \\
-Com a vacina\c{c}\~ao, temos uma taxa $\mu$ de pessoas que eram sucet\'iveis e se tornam resistentes de forma direta.
+Com a vacina\c{c}\~ao, temos uma taxa $\mu$ de pessoas que eram suscet\'iveis e se tornam resistentes de forma direta.
 \\
 
 %Questao 3-------------------------------------------------------
 \item
-De tudo o que vimos na disciplina, o fato que me deixou mais surpreso foi um exemplo, dado apenas como hist\'oria vivida pelo prof. Joni, da constru\c{c}\~ao de uma represa, onde foram retirados v\'arios animais da \'area que seria alagada e recolocados em outro lugar.
+De tudo o que vimos na disciplina, o fato que me deixou mais surpreso foi um exemplo, dado apenas como hist\'oria vivida pelo Prof. Joni, da constru\c{c}\~ao de uma represa, onde foram retirados v\'arios animais da \'area que seria alagada e recolocados em outro lugar.
 \\
-A atitude me parecia coerente, at\'e come\c{c}ar a estudar a Capacidade de Suporte, ap\'os isso, pude entender que ao inv\'es dos animais daquela regi\~ao morrerem devido ao alagamento, por terem sido removidos a um lugar que n\~ao seria alagados, eles acabaram morrendo de fome, afinal, o meio n\~ao estava preparado para manter todos aqueles animais.
+A atitude me parecia coerente, at\'e come\c{c}ar a estudar a Capacidade de Suporte, ap\'os isso, pude entender que ao inv\'es dos animais daquela regi\~ao morrerem devido ao alagamento, por terem sido removidos a um lugar que n\~ao seria alagado, eles acabaram morrendo de fome, afinal, o meio n\~ao estava preparado para manter todos aqueles animais.
 \\
-Com um estudo r\'apido, que qualquer aluno que tenha cursado essa disciplina poderia fazer, poderia ser mostrado que remover os animais de uma regi\~ao e levar pra outra deveria respeitar um conceito simples, por\'em muito importante, que \'e a capacidade de suporte do meio.
-\\
-Crescimento de tumores tamb\'em seria bem interessante de se estudar.
+Com um estudo r\'apido, que qualquer aluno que tenha cursado essa disciplina poderia fazer, seria f\'acil mostrar que remover os animais de uma regi\~ao e levar pra outra deveria respeitar um conceito simples, por\'em muito importante, que \'e a capacidade de suporte do meio.
 \\
 %Questao 4-------------------------------------------------------
 \item
-Um outro problema em rela\c{c}\~ao a disciplina \'e que ela requer conhecimentos de equa\c{c}\~oes diferenciais ordin\'arias, ent\~ao, talvez fosse interessante que ela tivesse pr\'e requisito como C\'alculo 3i (MA 311). Na parte de simula\c{c}\~ao, seria interssante que o aluno tivesse conhecimento de algor\'itmos, dessa forma, seria interessante que j\'a tivesse feito Algor\'itmos e programa\c{c}\~ao de computadores (MC 102). Mas, como a parte de simula\c{c}\~ao n\~ao t\~ao exigida, apenas C\'alculo 3 j\'a fosse interessamte. 
+Um outro problema em rela\c{c}\~ao a disciplina \'e que ela requer conhecimentos de equa\c{c}\~oes diferenciais ordin\'arias, ent\~ao, talvez fosse interessante que ela tivesse pr\'e requisito como C\'alculo 3 (MA 311). Na parte de simula\c{c}\~ao, seria interssante que o aluno tivesse conhecimento de algor\'itmos, dessa forma, seria interessante que j\'a tivesse feito Algor\'itmos e programa\c{c}\~ao de computadores (MC 102). Mas, como a parte de simula\c{c}\~ao n\~ao foi t\~ao exigida, apenas C\'alculo 3 j\'a seria interessamte. 
 \\
 %Questao 5-------------------------------------------------------
 \item
-De acordo com a ementa da disciplina, abordamos de forma muito boa os problemas de din\^amica populacional, incluindo compenti\c{c}\~ao intra e interespec\'ifica, por meio das equa\c{c}\~oes recursivas e equa\c{c}\~oes dferenciais, tendo muitos exemplos em aula e nos dois projetos. 
+De acordo com a ementa da disciplina, abordamos de forma muito boa os problemas de din\^amica populacional, incluindo competi\c{c}\~ao intra e interespec\'ifica, por meio das equa\c{c}\~oes recursivas e equa\c{c}\~oes diferenciais, tendo muitos exemplos em aula e nos dois projetos. 
 \\
-O assunto que gostaria de ter estudado com mais enf\^ase são os processos fisiol\'ogicos, principalmente aqueles que relacionados a doen\c{c}as tais como a dengue nos seres humanos, a febre aftosa em gado, a podrid\~ao (vermelha, fusarium ou abacaxi) da cana-de-a\c{c}ucar e como isso afeta o organismo e/ou a sociedade. 
+Os assuntos que gostaria de ter estudado com mais enf\^ase s\~ao os processos fisiol\'ogicos, principalmente aqueles relacionados a doen\c{c}as tais como a dengue nos seres humanos, a febre aftosa em gado, a podrid\~ao (vermelha, fusarium ou abacaxi) da cana-de-a\c{c}ucar e como isso afeta o organismo e/ou a sociedade.
 \\
-A grande maioria dos exemplos dado em sala, foram relacionados a dinâmica populacional com ou sem competi\c{c}\~ao e decaimento de poluentes, mostrando como isso afeta popula\c{c}\~oes. Mas, exemplos com doen\c{c}as foram abordados s\'o no final do curso, isso tamb\'em daria mais dinamismo a aula.
+Outro t\'opico interessante seria o crescimento de tumores.
+\\
+A grande maioria dos exemplos dado em sala, foram relacionados a din\^amica populacional com ou sem competi\c{c}\~ao e decaimento de poluentes, mostrando como isso afeta popula\c{c}\~oes. Contudo, exemplos com doen\c{c}as foram abordados apenas no final do curso. Esse tipo de exemplo daria mais dinamismo a aula.
 \\
 %Questao 6-------------------------------------------------------
 \item
-As equ\c{c}\~oes de crescimento populacional podem ser adaptadas doen\c{c}as. Como citei na quest\~ao 5, vou levar em considera\c{c}\~ao o crescimento de um tumor.
+As equ\c{c}\~oes de crescimento populacional podem ser adaptadas para as doen\c{c}as. Como citei na quest\~ao 5, vou levar em considera\c{c}\~ao o crescimento de um tumor.
 \\
 O material gen\'etico (DNA) de uma c\'elula pode sofrer altera\c{c}\~oes e desenvolver muta\c{c}\~oes que podem afetar o crescimento normal das estruturas celulares. Um mecanismo comumente afetado \'e o de divis\~ao das c\'elulas, fazendo com que elas se proliferem de maneira anormal. Essa prolifera\c{c}\~ao anormal provoca a forma\c{c}\~ao de massa celular, chamada de tumor.
 \\
@@ -136,6 +139,7 @@ Para modelar esse problema de crescimento de massa de forma anormal, vou utiliza
 \frac{dN}{dt} = r N ln (\frac{K}{N})
 \end{equation}
 Onde:
+\\
 $N(t)$ \'e a popula\c{c}\~ao das c\'elulas no instante t;
 \\
 $r$ \'e a taxa de crescimento das c\'elulas;
@@ -155,7 +159,7 @@ $K$ \'e a capacidade de suporte, nesse caso, o tamanho m\'aximo que esse tumor p
 %\hline
 %\end{tabular}
 %\end{table}
-Sabendo o valor inicial (popula\c{c}\~ao) das c\'elulas tumorais no instante $N(0)$ e sabendo a solu\c{c}\~ao da equa\c{c}\~ao de Gompertz em fun\c{c}\~ao do tempo, dado por:
+Sabendo o valor inicial (popula\c{c}\~ao) das c\'elulas tumorais no instante $N(0)$ e sabendo a solu\c{c}\~ao da equa\c{c}\~ao de Gompertz em fun\c{c}\~ao do tempo, dada por:
 \\
 \begin{equation}
 N(t) = K e^\(-e^r^t  \ln(\frac{N(0)}{K})
@@ -169,7 +173,8 @@ Agora, inserindo nesse processo o tratamento, a nova equa\c{c}\~ao que modela o 
 \end{equation}
 \\
 Onde:
-$\alpha$ \'e a taxa de diminui\c{c}\~ao do tumor (a for\c{c}a com que atua o medicamento) e $C$ \'e a concentra\c{c}\~ao do medicamento no organismos.
+\\
+$\alpha$ \'e a taxa de diminui\c{c}\~ao do tumor (a for\c{c}a com que atua o medicamento) e $C$ \'e a concentra\c{c}\~ao do medicamento no organismo.
 \\
 Dessa forma, temos uma nova taxa de crescimento do tumor que pode lev\'a-lo a extin\c{c}\~ao que poder\'iamos simular e validar.
 %----------------------------------------------------------------
