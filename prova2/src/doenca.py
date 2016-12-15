@@ -35,38 +35,40 @@ r = []		#removidos
 
 #inicializacao da quantidade de individuos
 S.append(1000)
-I.append(5)
-R.append(0)
+I.append(50)
+R.append(10)
 r.append(0)
 
-alpha	= 0.03		#taxa de infeccao de sucetivel para infectado
-beta	= 0.03		#
-gama	= 0.03
-phi	= 0.03
-epsilon	= 0.03
-laMbda	= 0.03
-omega	= 0.03
+alpha	= 0.030		#crescimento suscetivel
+beta	= 0.030		#crescimento infectados
+gamma	= 0.030		#crescimento dos resistente
 
+phi	= 0.0065		#resistente -> suscetiveis
+epsilon	= 0.031		#infectados -> removidos
+laMbda	= 0.0000035		#suscetiveis -> infectados
+omega	= 0.0063		#infectados -> resistentes
 
-T=20
+delta	= 0.005	#vacinacao
+
+T=150
 
 #O volume do rio eh constante, a retirada ou a insercao de agua no rio faz ele apenas diminuir ou aumentar a velocidade da agua
 
 #sem vacina
-for i in range(0,T):
-	s.append( s[i] - alpha * S[i] + laMbda * S[i] + phi * R[i]) ;
-	I.append( I[i] + alpha * S[i] - beta * R[i] - gamma * r[i] + epsilon * I[i]);
-	R.append( R[i] +  beta * R[i] + omega R[i] - phi * R[i]);
-	r.append( r[i] + gamma * r[i] );
-#com vacina 
 #for i in range(0,T):
-#	s.append( s[i] - alpha * S[i] + laMbda * S[i] + phi * R[i] - mi * S[i]) ;
-#	I.append( I[i] + alpha * S[i] - beta * R[i] - gamma * r[i] + epsilon * I[i]);
-#	R.append( R[i] +  beta * R[i] + omega R[i] - phi * R[i] + mi * S[i]);
-#	r.append( r[i] + gamma * r[i] );
+#	S.append( S[i] + alpha * S[i] - laMbda * S[i]*I[i] + phi * R[i]) ;
+#	I.append( I[i] + beta * I[i] +  laMbda * S[i]*I[i] - omega * I[i] - epsilon * I[i]);
+#	R.append( R[i] + gamma * R[i] + omega * I[i] - phi * R[i]);
+#	r.append( r[i] + epsilon * r[i] );
 
+#com vacina 
+for i in range(0,T):
+	S.append( S[i] + alpha * S[i] - laMbda * S[i]*I[i] + phi * R[i] - delta * S[i]) ;
+	I.append( I[i] + beta * I[i] +  laMbda * S[i]*I[i] - omega * I[i] - epsilon * I[i]);
+	R.append( R[i] + gamma * R[i] + omega * I[i] - phi * R[i] + delta * S[i]);
+	r.append( r[i] + epsilon * r[i] );
 
-plt.plot(s, 'bo-', label='Suscetivel');
+plt.plot(S, 'bo-', label='Suscetivel');
 plt.plot(R, 'ro-', label='Resistente');
 plt.plot(I, 'go-', label='Infectado');
 plt.plot(r, 'yo-', label='Removido');

@@ -13,7 +13,6 @@
 %----------------------------------------------------------------
 %Seções
 %----------------------------------------------------------------
-\newpage
 \begin{enumerate}
 %Questao 1-------------------------------------------------------
 \item
@@ -87,12 +86,12 @@ Setor &Fluxo 	& 	Afluente & Atividade Agr\'icola& Decaimento & Fonte & Polui\c{c
 \caption{Gr\'afico da concentra\c{c}\~ao do poluente por setor}
 \includegraphics[scale=0.25]{simulacao2.png}
 \end{figure}
-\\
+\newpage
 Mesmo com essas mudan\c{c}as, vemos que existe uma tend\^encia a estabilidade na maioria dos setores do rio.
 \\
 \'E poss\'ivel ver tamb\'em a influ\^encia da atividade agr\'icola, pois onde ela n\~ao existe, setores 2 e 6, a polui\c{c}\~ao tende a crescer.
 \\
-Outras simula\c{c}\~oes variando outros paramentros poderiam ser realizadas e dessa forma, obter diferentes gr\'aficos de diferentes situa\c{c}\~oes.
+Outras simula\c{c}\~oes variando outros par\^amentros poderiam ser realizadas e dessa forma, obter diferentes gr\'aficos de diferentes situa\c{c}\~oes.
 \\
 
 
@@ -100,49 +99,49 @@ Outras simula\c{c}\~oes variando outros paramentros poderiam ser realizadas e de
 \item
 Considerando a situa\c{c}\~ao de uma doen\c{c}a com caracter\'isticas parecidas com a gripe, onde o infectado se torna resistente ou removido e ainda existe vacina\c{c}\~ao, utilizando tamb\'em do modelo SIRS cont\'inuo para descrever o comportamento da doen\c{c}a, vamos levar em considera\c{c}\~ao que filhos de suscet\'ivel \'e suscet\'ivel, filho de infectado \'e infectado e filho de resistente \'e resistente. 
 \\
-Dessa forma, o sistema de equa\c{c}\~oes que melhor descreve essa situa\c{c}\~ao \'e:
+Dessa forma, o sistema de equa\c{c}\~oes que melhor descreve a situa\c{c}\~ao sem incluir a vacina\c{c}\~ao \'e:
 \\
 \begin{equation}
 \left\{\begin{array}{l}
-\frac{dS}{dt} = -\alpha SI + \lambda S + \phi R\\
+\frac{dS}{dt} = \alpha S + \lambda SI + \phi R\\
 \\
-\frac{dS}{dt} = \alpha SI - \beta R - \gamma r + \varepsilon I\\
+\frac{dI}{dt} = \beta I + \lambda SI - \omega I - \varepsilon I\\
 \\
-\frac{dR}{dt} = \beta R + \omega R - \phi R \\
+\frac{dR}{dt} = \gamma R + \omega I - \phi R \\
 \\
-\frac{dr}{dt} = \gamma r \\
+\frac{dr}{dt} = \varepsilon I \\
 \end{array}
 \end{equation}
-O modelo acima reflete o que acontece com a popula\c{c}\~ao quando ainda n\~ao se tem a vacina\c{c}\~ao, onde:
+onde:
 \begin{itemize}
 \item$S$ s\~ao os indiv\'iduos suscet\'iveis;
 \item$I$ s\~ao os indiv\'iduos infectados;
 \item$R$ s\~ao os indiv\'iduos resistentes;
 \item$r$ s\~ao os indiv\'iduos removidos;
-\item$\alpha$ \'e a taxa de infec\c{c}\~ao de indiv\'iduos suscet\'iveis;
-\item$\lambda$ \'e a taxa crescimento de indiv\'iduos suscet\'iveis;
-\item$\beta$ \'e a taxa  de indiv\'iduosde infectados que se tornam resistentes;
-\item$\varepsilon$ \'e a taxa crescimento de indiv\'iduos infectados;
-\item$\gamma$ \'e a taxa  de indiv\'iduosde que s\~ao removidos;
-\item$\omega$ \'e a taxa de crescimento de indiv\'iduos resistentes e
-\item$\phi$ \'e a taxa de indiv\'iduos infectados se voltam a ser suscet\'iveis.
+\item$\alpha$ \'e a taxa de crescimento de indiv\'iduos suscet\'iveis;
+\item$\beta$ \'e a taxa crescimento de indiv\'iduos infectados;
+\item$\gamma$ \'e a taxa de crescimento de indiv\'iduos resistentes;
+\item$\lambda$ \'e a taxa infec\c{c}\~ao de indiv\'iduos suscet\'iveis por infectados;
+\item$\omega$ \'e a taxa de indiv\'iduos infectados que se tornam resistentes e
+\item$\phi$ \'e a taxa de indiv\'iduos resistente se voltam a ser suscet\'iveis.
+\item$\varepsilon$ \'e a taxa de indiv\'iduos infectados que se tornam removidos;
 \end{itemize}
 \\
 Agora, vamos incluir a vacina\c{c}\~ao dos indiv\'iduos suscet\'iveis:
 \\
 \begin{equation}
 \left\{\begin{array}{l}
-\frac{dS}{dt} = -\alpha SI + \lambda S + \phi R - \mu S \\
+\frac{dS}{dt} = \alpha S + \lambda SI + \phi R - \Delta R\\
 \\
-\frac{dI}{dt} = \alpha SI - \beta R - \gamma r + \varepsilon I\\
+\frac{dI}{dt} = \beta I + \lambda SI - \omega I - \varepsilon I\\
 \\
-\frac{dR}{dt} = \beta R + \omega R + \phi R + \mu S \\
+\frac{dR}{dt} = \gamma R + \omega I - \phi R + \Delta S\\
 \\
-\frac{dr}{dt} = \gamma r \\
+\frac{dr}{dt} = \varepsilon I \\
 \end{array}
 \end{equation}
 \\
-Com a vacina\c{c}\~ao, temos uma taxa $\mu$ de pessoas que eram suscet\'iveis e se tornam resistentes de forma direta. Dessa forma,
+Com a vacina\c{c}\~ao, temos uma taxa $\Delta$ de pessoas que eram suscet\'iveis e se tornam resistentes de forma direta. Dessa forma, a quantidade de infectados diminui devido ao menor n\'umero de suscet\'iveis propensos a serem infectados.
 \\
 
 %Questao 3-------------------------------------------------------
@@ -165,7 +164,7 @@ Os assuntos que gostaria de ter estudado com mais enf\^ase s\~ao os processos fi
 \\
 Outro t\'opico interessante seria o crescimento de tumores.
 \\
-A grande maioria dos exemplos dado em sala, foram relacionados a din\^amica populacional com ou sem competi\c{c}\~ao e decaimento de poluentes, mostrando como isso afeta popula\c{c}\~oes. Contudo, exemplos com doen\c{c}as foram abordados apenas no final do curso. Esse tipo de exemplo daria mais dinamismo a aula.
+A grande maioria dos exemplos dado em sala, foram relacionados a din\^amica populacional, com ou sem competi\c{c}\~ao, e decaimento de poluentes, mostrando como isso afeta popula\c{c}\~oes. Contudo, exemplos com doen\c{c}as foram abordados apenas no final do curso. Esse tipo de exemplo daria mais dinamismo a aula.
 \\
 %Questao 6-------------------------------------------------------
 \item
