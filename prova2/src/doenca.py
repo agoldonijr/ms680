@@ -12,7 +12,7 @@
 #Verifica a documentacao junto a https://www.python.org/downloads/windows/ para instalacao no Windows
 #
 #Para a executar o programa, em um terminal, digite: 
-#python3 rio.py
+#python3 doenca.py
 #
 #Esse programa foi desenvolvido por Alcides Goldoni Junior - Bacharel Matematica Aplicada e computacional - 
 #Unicamp e pode ser utilizado por qualquer pessoa, desde que cite em suas referencias.
@@ -20,8 +20,7 @@
 
 
 #############################################################################################################
-
-
+#Essa programa faz a simulacao de uma doenca com caracteristicas parecidas com a gripe. Levando em consideracao o modelo SIRS incluindo ou nao uma taxa de vacinacao.
 #############################################################################################################
 
 # Biblioteca para plotar os graficos
