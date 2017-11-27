@@ -57,6 +57,8 @@ beta2	= 0.00056		#taxa de decrescimento por poluicao da especie B
 gama1	= 0.00000009		#taxa de decrescimento por predacao da especie C 
 gama2	= 0.00058		#taxa de decrescimento por poluicao da especie C 
 
+zeta	= 0.004			#taxa de descrescimento do predador por morte natural
+
 mi 	= 0.00000002		#taxa de crescimento do predador enquanto tem presa
 
 epsilon = 0.05			#taxa de decaimento do poluente
